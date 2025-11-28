@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AM Sazid | Portfolio</title>
@@ -293,7 +293,7 @@
       .mobile-nav-link {
         display: block;
         padding: 1rem 0;
-        color: #232E35;
+        color: #232e35;
         font-weight: 500;
         border-bottom: 1px solid #f1f5f9;
         transition: all 0.3s ease;
@@ -301,11 +301,11 @@
       }
 
       .mobile-nav-link:hover {
-        color: #7E74F1;
+        color: #7e74f1;
       }
 
       .mobile-nav-link.active {
-        color: #7E74F1;
+        color: #7e74f1;
       }
 
       .close-menu {
@@ -315,7 +315,7 @@
         background: none;
         border: none;
         font-size: 1.5rem;
-        color: #656D72;
+        color: #656d72;
         cursor: pointer;
       }
 
@@ -325,50 +325,50 @@
           font-size: 2rem !important;
           text-align: center;
         }
-        
+
         .hero h2 {
           font-size: 1.25rem !important;
           text-align: center;
         }
-        
+
         .hero-buttons {
           flex-direction: column;
           gap: 1rem;
           width: 100%;
         }
-        
+
         .hero-buttons a {
           width: 100%;
           text-align: center;
           justify-content: center;
         }
-        
+
         .info-item {
           width: 100%;
         }
-        
+
         .project-card {
           margin-bottom: 1.5rem;
         }
-        
+
         .contact-form {
           margin-top: 2rem;
         }
-        
+
         .floating-badge {
           display: none;
         }
-        
+
         /* Fix text wrapping issues */
         .hero-text-content {
           text-align: center;
         }
-        
+
         .hero-tagline {
           font-size: 0.9rem !important;
           line-height: 1.4;
         }
-        
+
         /* Fix grid layout for mobile */
         .hero-grid-item {
           display: flex;
@@ -376,13 +376,13 @@
           justify-content: flex-start;
           margin-bottom: 0.5rem;
         }
-        
+
         /* Ensure proper spacing */
         .container {
           padding-left: 1rem;
           padding-right: 1rem;
         }
-        
+
         /* FIX: Mobile menu button always visible */
         #mobileMenuButton {
           display: block !important;
@@ -396,40 +396,41 @@
           padding-left: 1rem;
           padding-right: 1rem;
         }
-        
+
         .section-title {
           font-size: 1.75rem;
         }
-        
-        .skill-card, .education-card {
+
+        .skill-card,
+        .education-card {
           padding: 1.5rem;
         }
-        
+
         .achievement-badge {
           width: 100%;
           justify-content: center;
           text-align: center;
         }
-        
+
         .hero h1 {
           font-size: 1.8rem !important;
         }
-        
+
         .hero h2 {
           font-size: 1.1rem !important;
         }
-        
+
         /* Fix text overflow */
         .text-overflow-fix {
           word-wrap: break-word;
           overflow-wrap: break-word;
         }
-        
+
         /* Fix padding issues */
         body {
           overflow-x: hidden;
         }
-        
+
         section {
           width: 100%;
           overflow-x: hidden;
@@ -442,7 +443,7 @@
           grid-template-columns: 1fr !important;
           gap: 0.5rem !important;
         }
-        
+
         .hero-content-item {
           justify-content: center !important;
           text-align: center !important;
@@ -453,7 +454,7 @@
       #mobileMenuButton {
         display: none;
       }
-      
+
       @media (max-width: 768px) {
         #mobileMenuButton {
           display: block !important;
@@ -463,22 +464,25 @@
       }
 
       /* FIX: Prevent horizontal scrolling */
-      html, body {
+      html,
+      body {
         max-width: 100%;
         overflow-x: hidden;
       }
-      
+
       * {
         box-sizing: border-box;
       }
     </style>
-</head>
-<body class="font-poppins bg-bg-light text-text-dark">
+  </head>
+  <body class="font-poppins bg-bg-light text-text-dark">
     <!-- Header Section - FIXED -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
       <div class="container mx-auto px-4 sm:px-6 py-4">
         <div class="flex justify-between items-center">
-          <div class="text-2xl font-bold text-primary">AM Sazid</div>
+          <div class="text-2xl font-bold text-primary">
+            <a href="#home" class="nav-link active">AM Sazid</a>
+          </div>
 
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex space-x-8">
@@ -505,61 +509,127 @@
         <i class="fas fa-times"></i>
       </button>
       <nav class="flex flex-col mt-12">
-        <a href="#home" class="mobile-nav-link active" onclick="closeMobileMenu()">Home</a>
-        <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
-        <a href="#education" class="mobile-nav-link" onclick="closeMobileMenu()">Education</a>
-        <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">Skills</a>
-        <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projects</a>
-        <a href="#achievements" class="mobile-nav-link" onclick="closeMobileMenu()">Achievements</a>
-        <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+        <a
+          href="#home"
+          class="mobile-nav-link active"
+          onclick="closeMobileMenu()"
+          >Home</a
+        >
+        <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()"
+          >About</a
+        >
+        <a href="#education" class="mobile-nav-link" onclick="closeMobileMenu()"
+          >Education</a
+        >
+        <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()"
+          >Skills</a
+        >
+        <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()"
+          >Projects</a
+        >
+        <a
+          href="#achievements"
+          class="mobile-nav-link"
+          onclick="closeMobileMenu()"
+          >Achievements</a
+        >
+        <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()"
+          >Contact</a
+        >
       </nav>
     </div>
 
     <!-- Hero Section - WITH YOUR IMAGE -->
-    <section id="home" class="min-h-screen gradient-bg text-white pt-20 overflow-hidden">
+    <section
+      id="home"
+      class="min-h-screen gradient-bg text-white pt-20 overflow-hidden"
+    >
       <div class="container mx-auto px-4 sm:px-6 py-12 md:py-20 relative">
         <!-- Floating Elements -->
-        <div class="absolute top-20 left-10 w-6 h-6 bg-white/20 rounded-full floating-element hidden md:block"></div>
-        <div class="absolute top-40 right-20 w-8 h-8 bg-white/15 rounded-full floating-element hidden md:block" style="animation-delay: 1s"></div>
-        <div class="absolute bottom-40 left-20 w-10 h-10 bg-white/10 rounded-full floating-element hidden md:block" style="animation-delay: 2s"></div>
+        <div
+          class="absolute top-20 left-10 w-6 h-6 bg-white/20 rounded-full floating-element hidden md:block"
+        ></div>
+        <div
+          class="absolute top-40 right-20 w-8 h-8 bg-white/15 rounded-full floating-element hidden md:block"
+          style="animation-delay: 1s"
+        ></div>
+        <div
+          class="absolute bottom-40 left-20 w-10 h-10 bg-white/10 rounded-full floating-element hidden md:block"
+          style="animation-delay: 2s"
+        ></div>
 
         <div class="flex flex-col md:flex-row items-center justify-between">
           <div class="md:w-1/2 mb-12 md:mb-0 hero-text-content">
-            <div class="inline-flex items-center justify-center md:justify-start gap-2 bg-white/10 rounded-full px-4 py-2 mb-6 fade-in w-full md:w-auto">
-              <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span class="text-sm font-medium hero-tagline text-overflow-fix">Front-End Developer | Competitive Programmer</span>
+            <div
+              class="inline-flex items-center justify-center md:justify-start gap-2 bg-white/10 rounded-full px-4 py-2 mb-6 fade-in w-full md:w-auto"
+            >
+              <div
+                class="w-2 h-2 bg-green-400 rounded-full animate-pulse"
+              ></div>
+              <span class="text-sm font-medium hero-tagline text-overflow-fix"
+                >Front-End Developer | Competitive Programmer</span
+              >
             </div>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight fade-in text-center md:text-left">
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight fade-in text-center md:text-left"
+            >
               Hi, I'm AM Sazid 👋
             </h1>
 
-            <h2 class="text-lg sm:text-xl md:text-2xl text-purple-200 mb-6 fade-in text-center md:text-left" style="transition-delay: 0.2s">
+            <h2
+              class="text-lg sm:text-xl md:text-2xl text-purple-200 mb-6 fade-in text-center md:text-left"
+              style="transition-delay: 0.2s"
+            >
               Competitive Programmer | Aspiring Data Scientist
             </h2>
 
             <!-- FIXED GRID LAYOUT FOR MOBILE -->
-            <div class="grid grid-cols-1 gap-3 mb-8 fade-in hero-content-grid" style="transition-delay: 0.6s">
-              <div class="flex items-center gap-3 text-purple-100 hero-content-item justify-center md:justify-start">
-                <i class="fas fa-laptop-code text-green-400 "></i>
-                <span class="text-sm md:text-base text-overflow-fix">Web Development Enthusiast</span>
+            <div
+              class="grid grid-cols-1 gap-3 mb-8 fade-in hero-content-grid"
+              style="transition-delay: 0.6s"
+            >
+              <div
+                class="flex items-center gap-3 text-purple-100 hero-content-item justify-center md:justify-start"
+              >
+                <i class="fas fa-laptop-code text-green-400"></i>
+                <span class="text-sm md:text-base text-overflow-fix"
+                  >Web Development Enthusiast</span
+                >
               </div>
-              <div class="flex items-center gap-3 text-purple-100 hero-content-item justify-center md:justify-start">
-                <i class="fas fa-trophy text-yellow-400 "></i>
-                <span class="text-sm md:text-base text-overflow-fix">Competitive Programmer & Contest Participant</span>
+              <div
+                class="flex items-center gap-3 text-purple-100 hero-content-item justify-center md:justify-start"
+              >
+                <i class="fas fa-trophy text-yellow-400"></i>
+                <span class="text-sm md:text-base text-overflow-fix"
+                  >Competitive Programmer & Contest Participant</span
+                >
               </div>
-              <div class="flex items-center gap-3 text-purple-100 hero-content-item justify-center md:justify-start">
-                <i class="fas fa-chart-line text-blue-400 "></i>
-                <span class="text-sm md:text-base text-overflow-fix">Interested in Data Science & AI</span>
+              <div
+                class="flex items-center gap-3 text-purple-100 hero-content-item justify-center md:justify-start"
+              >
+                <i class="fas fa-chart-line text-blue-400"></i>
+                <span class="text-sm md:text-base text-overflow-fix"
+                  >Interested in Data Science & AI</span
+                >
               </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-4 hero-buttons fade-in w-full" style="transition-delay: 0.8s">
-              <a href="#projects" class="bg-white text-primary px-4 sm:px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 pulse-glow">
+            <div
+              class="flex flex-col sm:flex-row gap-4 hero-buttons fade-in w-full"
+              style="transition-delay: 0.8s"
+            >
+              <a
+                href="#projects"
+                class="bg-white text-primary px-4 sm:px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 pulse-glow"
+              >
                 <i class="fas fa-briefcase"></i>
                 View My Work
               </a>
-              <a href="#contact" class="border-2 border-white text-white px-4 sm:px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+              <a
+                href="#contact"
+                class="border-2 border-white text-white px-4 sm:px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+              >
                 <i class="fas fa-envelope"></i>
                 Contact Me
               </a>
@@ -569,17 +639,27 @@
           <!-- Hero Image Section - WITH YOUR IMAGE -->
           <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
             <div class="relative">
-              <div class="w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 bg-white/10 rounded-full backdrop-blur-sm border-white border-8 flex items-center justify-center slide-in-right pulse-glow overflow-hidden">
+              <div
+                class="w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 bg-white/10 rounded-full backdrop-blur-sm border-white border-8 flex items-center justify-center slide-in-right pulse-glow overflow-hidden"
+              >
                 <!-- YOUR IMAGE HERE -->
-                <img src="public/WhatsApp Image 2025-05-15 at 9.16.47 PM.jpeg" 
-                     alt="AM Sazid" 
-                     class="w-full h-full object-cover rounded-full">
+                <img
+                  src="public/WhatsApp Image 2025-05-15 at 9.16.47 PM.jpeg"
+                  alt="AM Sazid"
+                  class="w-full h-full object-cover rounded-full"
+                />
               </div>
               <!-- Floating badges -->
-              <div class="absolute -top-2 -right-2 md:-top-4 md:-right-4 bg-white text-primary px-3 py-1 md:px-4 md:py-2 rounded-full font-semibold text-xs md:text-sm shadow-lg slide-in-right floating-badge" style="transition-delay: 1s">
+              <div
+                class="absolute -top-2 -right-2 md:-top-4 md:-right-4 bg-white text-primary px-3 py-1 md:px-4 md:py-2 rounded-full font-semibold text-xs md:text-sm shadow-lg slide-in-right floating-badge"
+                style="transition-delay: 1s"
+              >
                 <i class="fas fa-star mr-1"></i> Problem Solver
               </div>
-              <div class="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 rounded-full font-semibold text-xs md:text-sm shadow-lg slide-in-right floating-badge" style="transition-delay: 1.2s">
+              <div
+                class="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 rounded-full font-semibold text-xs md:text-sm shadow-lg slide-in-right floating-badge"
+                style="transition-delay: 1.2s"
+              >
                 <i class="fas fa-trophy mr-1"></i> Competitive Programmer
               </div>
             </div>
@@ -591,7 +671,9 @@
     <!-- About Section - WITH YOUR IMAGE -->
     <section id="about" class="py-16 md:py-20 bg-white">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
+        >
           About Me
         </h2>
 
@@ -599,11 +681,15 @@
           <!-- About Image Section - WITH YOUR IMAGE -->
           <div class="lg:w-2/5 w-full flex justify-center">
             <div class="relative">
-              <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center slide-in-left pulse-glow overflow-hidden">
+              <div
+                class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center slide-in-left pulse-glow overflow-hidden"
+              >
                 <!-- YOUR IMAGE HERE -->
-                <img src="public/WhatsApp Image 2025-05-15 at 9.16.47 PM.jpeg" 
-                     alt="AM Sazid" 
-                     class="w-full h-full object-cover rounded-2xl">
+                <img
+                  src="public/WhatsApp Image 2025-05-15 at 9.16.47 PM.jpeg"
+                  alt="AM Sazid"
+                  class="w-full h-full object-cover rounded-2xl"
+                />
               </div>
             </div>
           </div>
@@ -611,20 +697,41 @@
           <!-- About Content Section -->
           <div class="lg:w-3/5 w-full">
             <div class="slide-in-right">
-              <h3 class="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">Hi! I'm AM Sazid</h3>
-              <p class="text-gray-600 mb-6 leading-relaxed text-center lg:text-left">
-                I'm a motivated front-end developer and competitive programmer with a strong foundation in programming. I enjoy building responsive websites, solving algorithmic problems, and participating in programming contests.
+              <h3
+                class="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left"
+              >
+                Hi! I'm AM Sazid
+              </h3>
+              <p
+                class="text-gray-600 mb-6 leading-relaxed text-center lg:text-left"
+              >
+                I'm a motivated front-end developer and competitive programmer
+                with a strong foundation in programming. I enjoy building
+                responsive websites, solving algorithmic problems, and
+                participating in programming contests.
               </p>
-              <p class="text-gray-600 mb-6 leading-relaxed text-center lg:text-left">
-                I am self-driven, detail-oriented, and always eager to take on challenges while learning new technologies like Data Science and AI. My goal is to create impactful digital solutions and continuously improve my skills.
+              <p
+                class="text-gray-600 mb-6 leading-relaxed text-center lg:text-left"
+              >
+                I am self-driven, detail-oriented, and always eager to take on
+                challenges while learning new technologies like Data Science and
+                AI. My goal is to create impactful digital solutions and
+                continuously improve my skills.
               </p>
             </div>
 
             <!-- Personal Info Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div class="info-item stagger-item" style="transition-delay: 0.1s">
-                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300">
-                  <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+              <div
+                class="info-item stagger-item"
+                style="transition-delay: 0.1s"
+              >
+                <div
+                  class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300"
+                >
+                  <div
+                    class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                  >
                     <i class="fas fa-user"></i>
                   </div>
                   <div>
@@ -633,44 +740,77 @@
                   </div>
                 </div>
               </div>
-              <div class="info-item stagger-item" style="transition-delay: 0.2s">
-                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300">
-                  <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+              <div
+                class="info-item stagger-item"
+                style="transition-delay: 0.2s"
+              >
+                <div
+                  class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300"
+                >
+                  <div
+                    class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                  >
                     <i class="fas fa-envelope"></i>
                   </div>
                   <div>
                     <p class="text-sm text-gray-500">Email</p>
-                    <p class="font-semibold text-sm md:text-base">amsazid.cse@gmail.com</p>
+                    <p class="font-semibold text-sm md:text-base">
+                      amsazid.cse@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="info-item stagger-item" style="transition-delay: 0.3s">
-                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300">
-                  <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+              <div
+                class="info-item stagger-item"
+                style="transition-delay: 0.3s"
+              >
+                <div
+                  class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300"
+                >
+                  <div
+                    class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                  >
                     <i class="fab fa-whatsapp"></i>
                   </div>
                   <div>
                     <p class="text-sm text-gray-500">WhatsApp</p>
-                    <p class="font-semibold text-sm md:text-base">01727099858</p>
+                    <p class="font-semibold text-sm md:text-base">
+                      01727099858
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="info-item stagger-item" style="transition-delay: 0.4s">
-                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300">
-                  <div class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+              <div
+                class="info-item stagger-item"
+                style="transition-delay: 0.4s"
+              >
+                <div
+                  class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-all duration-300"
+                >
+                  <div
+                    class="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                  >
                     <i class="fab fa-github"></i>
                   </div>
                   <div>
                     <p class="text-sm text-gray-500">GitHub</p>
-                    <p class="font-semibold text-sm md:text-base">github.com/am-sazid</p>
+                    <p class="font-semibold text-sm md:text-base">
+                      github.com/am-sazid
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Call to Action Button -->
-            <div class="slide-in-right text-center lg:text-left" style="transition-delay: 0.5s">
-              <a href="#contact" class="bg-primary text-white px-6 py-3 md:px-8 md:py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 pulse-glow">
+            <div
+              class="slide-in-right text-center lg:text-left"
+              style="transition-delay: 0.5s"
+            >
+              <a
+                href="#contact"
+                class="bg-primary text-white px-6 py-3 md:px-8 md:py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 pulse-glow"
+              >
                 <i class="fas fa-paper-plane"></i>
                 Get In Touch
               </a>
@@ -684,7 +824,9 @@
     <!-- Education Section -->
     <section id="education" class="py-16 md:py-20 bg-gray-50">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
+        >
           Education
         </h2>
 
@@ -692,11 +834,15 @@
           <div class="space-y-8">
             <!-- Education Item 1: Diploma -->
             <div class="education-card fade-in">
-              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mb-4"
+              >
                 <h3 class="text-xl font-semibold gradient-text">
                   Diploma in Computer Science & Technology
                 </h3>
-                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0"
+                >
                   Present
                 </span>
               </div>
@@ -704,16 +850,25 @@
                 Graphic Arts Institute
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Learned computer fundamentals, software development, and problem-solving skills. Gained practical experience in programming, web development, and software engineering principles.
+                Learned computer fundamentals, software development, and
+                problem-solving skills. Gained practical experience in
+                programming, web development, and software engineering
+                principles.
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
-                <span class="bg-purple-100 text-primary px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
+                >
                   Computer Fundamentals
                 </span>
-                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
+                >
                   Software Development
                 </span>
-                <span class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
+                >
                   Problem Solving
                 </span>
               </div>
@@ -721,11 +876,15 @@
 
             <!-- Education Item 2: SSC -->
             <div class="education-card fade-in" style="transition-delay: 0.2s">
-              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between mb-4"
+              >
                 <h3 class="text-xl font-semibold gradient-text">
                   Secondary School Certificate (SSC)
                 </h3>
-                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">
+                <span
+                  class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0"
+                >
                   Completed
                 </span>
               </div>
@@ -733,16 +892,24 @@
                 Maheshpur Govt. Pilot Model High School, Electrical Department
               </h4>
               <p class="text-gray-600 leading-relaxed">
-                Built a strong foundation in science, mathematics, and analytical thinking. Developed technical skills in electrical systems while maintaining excellent academic performance.
+                Built a strong foundation in science, mathematics, and
+                analytical thinking. Developed technical skills in electrical
+                systems while maintaining excellent academic performance.
               </p>
               <div class="mt-4 flex flex-wrap gap-2">
-                <span class="bg-purple-100 text-primary px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
+                >
                   Science & Mathematics
                 </span>
-                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
+                >
                   Analytical Thinking
                 </span>
-                <span class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
+                >
                   Technical Skills
                 </span>
               </div>
@@ -755,7 +922,9 @@
     <!-- Skills Section -->
     <section id="skills" class="py-16 md:py-20 bg-white">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
+        >
           Skills
         </h2>
 
@@ -763,7 +932,9 @@
           <!-- Programming Languages Card -->
           <div class="skill-card fade-in">
             <div class="text-center mb-6">
-              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div
+                class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4"
+              >
                 <i class="fas fa-code"></i>
               </div>
               <h3 class="text-xl font-semibold gradient-text">
@@ -816,7 +987,9 @@
           <!-- Web Development Card -->
           <div class="skill-card fade-in" style="transition-delay: 0.2s">
             <div class="text-center mb-6">
-              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div
+                class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4"
+              >
                 <i class="fas fa-laptop-code"></i>
               </div>
               <h3 class="text-xl font-semibold gradient-text">
@@ -869,7 +1042,9 @@
           <!-- Tools & Interests Card -->
           <div class="skill-card fade-in" style="transition-delay: 0.4s">
             <div class="text-center mb-6">
-              <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div
+                class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4"
+              >
                 <i class="fas fa-tools"></i>
               </div>
               <h3 class="text-xl font-semibold gradient-text">
@@ -938,19 +1113,30 @@
     <!-- Projects Section -->
     <section id="projects" class="py-16 md:py-20 bg-gray-50">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
+        >
           Projects
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project 1: CGPA Predictor -->
-          <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in" style="transition-delay: 0.1s">
-            <div class="h-48  from-primary to-primary-dark relative overflow-hidden">
-              <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in"
+            style="transition-delay: 0.1s"
+          >
+            <div
+              class="h-48 from-primary to-primary-dark relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-black/20 flex items-center justify-center"
+              >
                 <i class="fas fa-graduation-cap text-white text-6xl"></i>
               </div>
               <div class="absolute top-4 right-4">
-                <span class="bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold">
+                <span
+                  class="bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold"
+                >
                   Featured
                 </span>
               </div>
@@ -958,29 +1144,47 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-3">CGPA Predictor</h3>
               <p class="text-gray-600 mb-4">
-                Personal CGPA Predictor project with funny certificate generation feature.
+                Personal CGPA Predictor project with funny certificate
+                generation feature.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-purple-100 text-primary px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
+                >
                   Web App
                 </span>
-                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
+                >
                   Interactive
                 </span>
-                <span class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
+                >
                   Certificate Gen
                 </span>
               </div>
               <div class="flex justify-between items-center">
-                <a href="#" class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1">
+                <a
+                  href="#"
+                  class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1"
+                >
                   View Project
-                  <i class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"></i>
+                  <i
+                    class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"
+                  ></i>
                 </a>
                 <div class="flex space-x-2">
-                  <a href="#" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300">
+                  <a
+                    href="#"
+                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
+                  >
                     <i class="fas fa-eye text-gray-600"></i>
                   </a>
-                  <a href="#" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300">
+                  <a
+                    href="#"
+                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
+                  >
                     <i class="fab fa-github text-gray-600"></i>
                   </a>
                 </div>
@@ -989,9 +1193,16 @@
           </div>
 
           <!-- Project 2: Architects Website -->
-          <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in" style="transition-delay: 0.2s">
-            <div class="h-48  from-green-500 to-blue-400 relative overflow-hidden">
-              <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in"
+            style="transition-delay: 0.2s"
+          >
+            <div
+              class="h-48 from-green-500 to-blue-400 relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-black/20 flex items-center justify-center"
+              >
                 <i class="fas fa-building text-white text-6xl"></i>
               </div>
             </div>
@@ -1000,29 +1211,47 @@
                 Architects Model Website
               </h3>
               <p class="text-gray-600 mb-4">
-                Front-end development for an architectural firm website with modern design.
+                Front-end development for an architectural firm website with
+                modern design.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-purple-100 text-primary px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
+                >
                   HTML/CSS
                 </span>
-                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
+                >
                   JavaScript
                 </span>
-                <span class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
+                >
                   Responsive
                 </span>
               </div>
               <div class="flex justify-between items-center">
-                <a href="#" class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1">
+                <a
+                  href="#"
+                  class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1"
+                >
                   View Project
-                  <i class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"></i>
+                  <i
+                    class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"
+                  ></i>
                 </a>
                 <div class="flex space-x-2">
-                  <a href="#" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300">
+                  <a
+                    href="#"
+                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
+                  >
                     <i class="fas fa-eye text-gray-600"></i>
                   </a>
-                  <a href="#" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300">
+                  <a
+                    href="#"
+                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
+                  >
                     <i class="fab fa-github text-gray-600"></i>
                   </a>
                 </div>
@@ -1031,9 +1260,16 @@
           </div>
 
           <!-- Project 3: FitHub -->
-          <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in" style="transition-delay: 0.3s">
-            <div class="h-48  from-orange-500 to-red-500 relative overflow-hidden">
-              <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <div
+            class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in"
+            style="transition-delay: 0.3s"
+          >
+            <div
+              class="h-48 from-orange-500 to-red-500 relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-black/20 flex items-center justify-center"
+              >
                 <i class="fas fa-dumbbell text-white text-6xl"></i>
               </div>
             </div>
@@ -1042,29 +1278,47 @@
                 FitHub Practice Project
               </h3>
               <p class="text-gray-600 mb-4">
-                Fitness website project with workout plans and exercise tracking features.
+                Fitness website project with workout plans and exercise tracking
+                features.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-purple-100 text-primary px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
+                >
                   Frontend
                 </span>
-                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
+                >
                   UI/UX
                 </span>
-                <span class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm">
+                <span
+                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
+                >
                   Fitness
                 </span>
               </div>
               <div class="flex justify-between items-center">
-                <a href="#" class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1">
+                <a
+                  href="#"
+                  class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1"
+                >
                   View Project
-                  <i class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"></i>
+                  <i
+                    class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"
+                  ></i>
                 </a>
                 <div class="flex space-x-2">
-                  <a href="#" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300">
+                  <a
+                    href="#"
+                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
+                  >
                     <i class="fas fa-eye text-gray-600"></i>
                   </a>
-                  <a href="#" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300">
+                  <a
+                    href="#"
+                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
+                  >
                     <i class="fab fa-github text-gray-600"></i>
                   </a>
                 </div>
@@ -1078,7 +1332,9 @@
     <!-- Achievements Section -->
     <section id="achievements" class="py-16 md:py-20 bg-white">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
+        >
           Achievements
         </h2>
 
@@ -1086,7 +1342,9 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Programming Contest Achievements -->
             <div class="fade-in">
-              <h3 class="text-2xl font-semibold mb-6 gradient-text text-center md:text-left">
+              <h3
+                class="text-2xl font-semibold mb-6 gradient-text text-center md:text-left"
+              >
                 Programming Contest Achievements
               </h3>
               <div class="space-y-4">
@@ -1111,7 +1369,9 @@
 
             <!-- Skills & Expertise -->
             <div class="fade-in" style="transition-delay: 0.2s">
-              <h3 class="text-2xl font-semibold mb-6 gradient-text text-center md:text-left">
+              <h3
+                class="text-2xl font-semibold mb-6 gradient-text text-center md:text-left"
+              >
                 Skills & Expertise
               </h3>
               <div class="space-y-4">
@@ -1138,9 +1398,13 @@
           <!-- Call to Action -->
           <div class="mt-12 text-center fade-in" style="transition-delay: 0.4s">
             <p class="text-lg text-gray-600 mb-6">
-              I'm constantly learning and improving my skills through practice, projects, and participating in programming contests.
+              I'm constantly learning and improving my skills through practice,
+              projects, and participating in programming contests.
             </p>
-            <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 pulse-glow">
+            <a
+              href="#contact"
+              class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 pulse-glow"
+            >
               <i class="fas fa-handshake"></i>
               Let's Work Together
             </a>
@@ -1152,7 +1416,9 @@
     <!-- Contact Section -->
     <section id="contact" class="py-16 md:py-20 bg-gray-50">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
+        >
           Contact Me
         </h2>
 
@@ -1161,17 +1427,29 @@
             <!-- Contact Information -->
             <div>
               <div class="slide-in-left">
-                <h3 class="text-2xl font-semibold mb-6 text-center lg:text-left">Let's Connect!</h3>
+                <h3
+                  class="text-2xl font-semibold mb-6 text-center lg:text-left"
+                >
+                  Let's Connect!
+                </h3>
                 <p class="text-gray-600 mb-8 text-center lg:text-left">
-                  I'm always interested in new opportunities, collaborations, or just a friendly chat about technology and programming.
+                  I'm always interested in new opportunities, collaborations, or
+                  just a friendly chat about technology and programming.
                 </p>
               </div>
 
               <!-- Contact Methods -->
               <div class="contact-methods">
-                <div class="contact-method stagger-item" style="transition-delay: 0.1s">
-                  <div class="flex items-center gap-4 p-4 bg-white rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-sm">
-                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <div
+                  class="contact-method stagger-item"
+                  style="transition-delay: 0.1s"
+                >
+                  <div
+                    class="flex items-center gap-4 p-4 bg-white rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-sm"
+                  >
+                    <div
+                      class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                    >
                       <i class="fab fa-github"></i>
                     </div>
                     <div>
@@ -1181,9 +1459,16 @@
                   </div>
                 </div>
 
-                <div class="contact-method stagger-item" style="transition-delay: 0.2s">
-                  <div class="flex items-center gap-4 p-4 bg-white rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-sm">
-                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <div
+                  class="contact-method stagger-item"
+                  style="transition-delay: 0.2s"
+                >
+                  <div
+                    class="flex items-center gap-4 p-4 bg-white rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-sm"
+                  >
+                    <div
+                      class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                    >
                       <i class="fas fa-envelope"></i>
                     </div>
                     <div>
@@ -1193,9 +1478,16 @@
                   </div>
                 </div>
 
-                <div class="contact-method stagger-item" style="transition-delay: 0.3s">
-                  <div class="flex items-center gap-4 p-4 bg-white rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-sm">
-                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <div
+                  class="contact-method stagger-item"
+                  style="transition-delay: 0.3s"
+                >
+                  <div
+                    class="flex items-center gap-4 p-4 bg-white rounded-lg hover:bg-purple-50 transition-all duration-300 shadow-sm"
+                  >
+                    <div
+                      class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white"
+                    >
                       <i class="fab fa-whatsapp"></i>
                     </div>
                     <div>
@@ -1207,19 +1499,34 @@
               </div>
 
               <!-- Social Links -->
-              <div class="social-links stagger-item mt-8 text-center lg:text-left" style="transition-delay: 0.4s">
+              <div
+                class="social-links stagger-item mt-8 text-center lg:text-left"
+                style="transition-delay: 0.4s"
+              >
                 <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
                 <div class="flex space-x-4 justify-center lg:justify-start">
-                  <a href="https://github.com/am-sazid" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-dark transition-all duration-300 transform hover:scale-110 pulse-glow">
+                  <a
+                    href="https://github.com/am-sazid"
+                    class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-dark transition-all duration-300 transform hover:scale-110 pulse-glow"
+                  >
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="#" class="w-12 h-12 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-all duration-300 transform hover:scale-110">
+                  <a
+                    href="#"
+                    class="w-12 h-12 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-all duration-300 transform hover:scale-110"
+                  >
                     <i class="fab fa-twitter"></i>
                   </a>
-                  <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-110">
+                  <a
+                    href="#"
+                    class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-110"
+                  >
                     <i class="fab fa-linkedin-in"></i>
                   </a>
-                  <a href="#" class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-all duration-300 transform hover:scale-110">
+                  <a
+                    href="#"
+                    class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-all duration-300 transform hover:scale-110"
+                  >
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </div>
@@ -1228,28 +1535,63 @@
 
             <!-- Contact Form -->
             <div class="contact-form slide-in-right">
-              <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
-                <h3 class="text-xl font-semibold mb-6 text-center lg:text-left">Send me a message</h3>
+              <div
+                class="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-gray-100"
+              >
+                <h3 class="text-xl font-semibold mb-6 text-center lg:text-left">
+                  Send me a message
+                </h3>
                 <form id="contactForm">
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label for="name" class="block text-gray-700 mb-2">Your Name</label>
-                      <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300" required />
+                      <label for="name" class="block text-gray-700 mb-2"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                        required
+                      />
                     </div>
                     <div>
-                      <label for="email" class="block text-gray-700 mb-2">Your Email</label>
-                      <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300" required />
+                      <label for="email" class="block text-gray-700 mb-2"
+                        >Your Email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="mb-6">
-                    <label for="subject" class="block text-gray-700 mb-2">Subject</label>
-                    <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300" required />
+                    <label for="subject" class="block text-gray-700 mb-2"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                      required
+                    />
                   </div>
                   <div class="mb-6">
-                    <label for="message" class="block text-gray-700 mb-2">Your Message</label>
-                    <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300" required></textarea>
+                    <label for="message" class="block text-gray-700 mb-2"
+                      >Your Message</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="5"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                      required
+                    ></textarea>
                   </div>
-                  <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 pulse-glow">
+                  <button
+                    type="submit"
+                    class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-300 transform hover:scale-105 pulse-glow"
+                  >
                     Send Message
                   </button>
                 </form>
@@ -1267,54 +1609,69 @@
           <div class="mb-6 md:mb-0 text-center md:text-left">
             <div class="text-2xl font-bold text-primary">AM Sazid</div>
             <p class="mt-2 text-gray-400">
-              Front-End Developer | Competitive Programmer | Aspiring Data Scientist
+              Front-End Developer | Competitive Programmer | Aspiring Data
+              Scientist
             </p>
           </div>
           <div class="flex space-x-6">
-            <a href="https://github.com/am-sazid" class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110">
+            <a
+              href="https://github.com/am-sazid"
+              class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
+            >
               <i class="fab fa-github text-xl"></i>
             </a>
-            <a href="#" class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
+            >
               <i class="fas fa-envelope text-xl"></i>
             </a>
-            <a href="#" class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
+            >
               <i class="fab fa-whatsapp text-xl"></i>
             </a>
           </div>
         </div>
-        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
           <p>&copy; 2023 AM Sazid. All rights reserved.</p>
         </div>
       </div>
-    </footer> 
+    </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark transition-all duration-300 transform hover:scale-110 opacity-0 invisible back-to-top pulse-glow">
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark transition-all duration-300 transform hover:scale-110 opacity-0 invisible back-to-top pulse-glow"
+    >
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script >
-         // Mobile Menu Functionality
-      const mobileMenuButton = document.getElementById('mobileMenuButton');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const closeMenu = document.getElementById('closeMenu');
+    <script>
+      // Mobile Menu Functionality
+      const mobileMenuButton = document.getElementById("mobileMenuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
 
       function openMobileMenu() {
-        mobileMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        mobileMenu.classList.add("active");
+        document.body.style.overflow = "hidden";
       }
 
       function closeMobileMenu() {
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = 'auto';
+        mobileMenu.classList.remove("active");
+        document.body.style.overflow = "auto";
       }
 
-      mobileMenuButton.addEventListener('click', openMobileMenu);
-      closeMenu.addEventListener('click', closeMobileMenu);
+      mobileMenuButton.addEventListener("click", openMobileMenu);
+      closeMenu.addEventListener("click", closeMobileMenu);
 
       // Close mobile menu when clicking on links
-      document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", closeMobileMenu);
       });
 
       // Header scroll effect
@@ -1345,11 +1702,13 @@
       });
 
       // Form submission
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Thank you for your message! I will get back to you soon.");
-        this.reset();
-      });
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message! I will get back to you soon.");
+          this.reset();
+        });
 
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
