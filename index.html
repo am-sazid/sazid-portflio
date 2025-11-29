@@ -357,7 +357,8 @@
         }
 
         .floating-badge {
-          display: none;
+          /* display: none; */
+          display: inline;
         }
 
         /* Fix text wrapping issues */
@@ -489,13 +490,17 @@
 
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex space-x-8">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#achievements" class="nav-link">Achievements</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <div class="flex lg:mr-60 justify-between gap-4 ">
+              <a href="#home" class="nav-link active">Home</a>
+              <a href="#about" class="nav-link">About</a>
+              <a href="#education" class="nav-link">Education</a>
+              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#achievements" class="nav-link">Achievements</a>
+            </div>
+            <div>
+              <a href="#contact" class="nav-link bg-[#685ddc] text-amber-50 px-4 py-3 rounded-xl">Contact</a>
+            </div>
           </nav>
 
           <!-- Mobile Menu Button - FIXED: Always visible on mobile -->
@@ -664,7 +669,7 @@
                 <i class="fas fa-star mr-1"></i> Problem Solver
               </div>
               <div
-                class="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-green-500 text-white px-3 py-1 md:px-4 md:py-2 rounded-full font-semibold text-xs md:text-sm shadow-lg slide-in-right floating-badge"
+                class="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 bg-green-500 text-white px-2 py-1 md:px-4 md:py-2 rounded-full font-semibold text-xs md:text-sm shadow-lg slide-in-right floating-badge"
                 style="transition-delay: 1.2s"
               >
                 <i class="fas fa-trophy mr-1"></i> Competitive Programmer
