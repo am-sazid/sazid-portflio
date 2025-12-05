@@ -1,3 +1,49 @@
 @import "tailwindcss";
 
 
+
+
+
+
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 460px; /* Perfect equal height */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure all cards have same height */
+.h-full {
+  height: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Image hover effect */
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Consistent card content height */
+.h-48 {
+  height: 12rem;
+}
+
+/* Badge animations */
+.project-card .absolute.top-3.right-3 span {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .absolute.top-3.right-3 span {
+  transform: scale(1.05);
+}

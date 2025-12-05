@@ -1122,225 +1122,317 @@
         </div>
       </div>
     </section>
+<!-- Projects Section -->
+<section id="projects" class="py-16 md:py-20 bg-gray-50">
+  <div class="container mx-auto px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in">
+      My Projects
+    </h2>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 md:py-20 bg-gray-50">
-      <div class="container mx-auto px-4 sm:px-6">
-        <h2
-          class="text-2xl sm:text-3xl font-bold text-center mb-12 md:mb-16 section-title fade-in"
-        >
-          Projects
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Project 1: CGPA Predictor -->
-          <div
-            class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in"
-            style="transition-delay: 0.1s"
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project 1: Funny CGPA Calculator -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 fade-in h-full flex flex-col" style="transition-delay: 0.1s">
+        <div class="h-48 relative overflow-hidden">
+          <!-- Calculator Image -->
+          <img 
+            src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            alt="Calculator and grades"
+            class="w-full h-full object-cover"
+            loading="lazy"
           >
-            <div
-              class="h-48 from-primary to-primary-dark relative overflow-hidden"
-            >
-              <div
-                class="absolute inset-0 bg-black/20 flex items-center justify-center"
-              >
-                <i class="fas fa-graduation-cap text-white text-6xl"></i>
-              </div>
-              <div class="absolute top-4 right-4">
-                <span
-                  class="bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold"
-                >
-                  Featured
-                </span>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3">CGPA Predictor</h3>
-              <p class="text-gray-600 mb-4">
-                Personal CGPA Predictor project with funny certificate
-                generation feature.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
-                >
-                  Web App
-                </span>
-                <span
-                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
-                >
-                  Interactive
-                </span>
-                <span
-                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
-                >
-                  Certificate Gen
-                </span>
-              </div>
-              <div class="flex justify-between items-center">
-                <a
-                  href="#"
-                  class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1"
-                >
-                  View Project
-                  <i
-                    class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"
-                  ></i>
-                </a>
-                <div class="flex space-x-2">
-                  <a
-                    href="#"
-                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
-                  >
-                    <i class="fas fa-eye text-gray-600"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
-                  >
-                    <i class="fab fa-github text-gray-600"></i>
-                  </a>
-                </div>
-              </div>
+          <div class="absolute inset-0  from-black/40 to-transparent"></div>
+          
+          <!-- Badge -->
+          <div class="absolute top-3 right-3">
+            <span class="bg-white text-primary px-3 py-1 rounded-full text-xs font-semibold shadow">
+              Featured
+            </span>
+          </div>
+          
+          <!-- Project Type -->
+          <div class="absolute bottom-3 left-3">
+            <span class="bg-white/90 text-gray-800 px-2 py-1 rounded text-xs font-medium">
+              Web App
+            </span>
+          </div>
+        </div>
+        
+        <!-- Card Content - Fixed Height -->
+        <div class="p-5  flex flex-col">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Funny CGPA Calculator</h3>
+          
+          <p class="text-gray-600 text-sm mb-4 leading-relaxed ">
+            An interactive CGPA calculator that predicts grades and generates humorous certificates. Built with HTML, Tailwind CSS, and JavaScript for a seamless user experience.
+          </p>
+          
+          <!-- Tech Stack -->
+          <div class="mb-4">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-purple-100 text-primary px-2 py-1 rounded text-xs">
+                HTML
+              </span>
+              <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs">
+                Tailwind CSS
+              </span>
+              <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs">
+                JavaScript
+              </span>
+              <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-xs">
+                Interactive
+              </span>
             </div>
           </div>
-
-          <!-- Project 2: Architects Website -->
-          <div
-            class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in"
-            style="transition-delay: 0.2s"
-          >
-            <div
-              class="h-48 from-green-500 to-blue-400 relative overflow-hidden"
-            >
-              <div
-                class="absolute inset-0 bg-black/20 flex items-center justify-center"
+          
+          <!-- Action Buttons -->
+          <div class="pt-3 border-t border-gray-100">
+            <div class="flex justify-between items-center">
+              <a
+                href="https://funny-cgpa.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1 text-sm"
               >
-                <i class="fas fa-building text-white text-6xl"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3">
-                Architects Model Website
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Front-end development for an architectural firm website with
-                modern design.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
-                >
-                  HTML/CSS
-                </span>
-                <span
-                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
-                >
-                  JavaScript
-                </span>
-                <span
-                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
-                >
-                  Responsive
-                </span>
-              </div>
-              <div class="flex justify-between items-center">
+                View Live Demo
+                <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+              
+              <div class="flex space-x-1">
                 <a
-                  href="#"
-                  class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1"
+                  href="https://funny-cgpa.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-dark text-xs"
+                  title="Live Project"
                 >
-                  View Project
-                  <i
-                    class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"
-                  ></i>
+                  <i class="fas fa-external-link-alt"></i>
                 </a>
-                <div class="flex space-x-2">
-                  <a
-                    href="#"
-                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
-                  >
-                    <i class="fas fa-eye text-gray-600"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
-                  >
-                    <i class="fab fa-github text-gray-600"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: FitHub -->
-          <div
-            class="project-card bg-white rounded-xl overflow-hidden shadow-sm fade-in"
-            style="transition-delay: 0.3s"
-          >
-            <div
-              class="h-48 from-orange-500 to-red-500 relative overflow-hidden"
-            >
-              <div
-                class="absolute inset-0 bg-black/20 flex items-center justify-center"
-              >
-                <i class="fas fa-dumbbell text-white text-6xl"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-3">
-                FitHub Practice Project
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Fitness website project with workout plans and exercise tracking
-                features.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="bg-purple-100 text-primary px-3 py-1 rounded text-sm"
-                >
-                  Frontend
-                </span>
-                <span
-                  class="bg-blue-100 text-blue-600 px-3 py-1 rounded text-sm"
-                >
-                  UI/UX
-                </span>
-                <span
-                  class="bg-green-100 text-green-600 px-3 py-1 rounded text-sm"
-                >
-                  Fitness
-                </span>
-              </div>
-              <div class="flex justify-between items-center">
-                <a
-                  href="#"
-                  class="text-primary font-semibold hover:text-primary-dark transition duration-300 flex items-center gap-1"
-                >
-                  View Project
-                  <i
-                    class="fas fa-arrow-right ml-1 transform transition-transform group-hover:translate-x-1"
-                  ></i>
-                </a>
-                <div class="flex space-x-2">
-                  <a
-                    href="#"
-                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
-                  >
-                    <i class="fas fa-eye text-gray-600"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-purple-100 transition duration-300"
-                  >
-                    <i class="fab fa-github text-gray-600"></i>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Project 2: CoffeeLime - Frontend Practice -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 fade-in h-full flex flex-col" style="transition-delay: 0.2s">
+        <div class="h-48 relative overflow-hidden">
+          <!-- Coffee Shop Image -->
+          <img 
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            alt="Coffee shop with coffee"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          >
+          <div class="absolute inset-0  from-black/40 to-transparent"></div>
+          
+          <!-- Badge -->
+          <div class="absolute top-3 right-3">
+            <span class="bg-white text-amber-600 px-3 py-1 rounded-full text-xs font-semibold shadow">
+              Practice Project
+            </span>
+          </div>
+          
+          <!-- Project Type -->
+          <div class="absolute bottom-3 left-3">
+            <span class="bg-white/90 text-gray-800 px-2 py-1 rounded text-xs font-medium">
+              Coffee Shop
+            </span>
+          </div>
+        </div>
+        
+        <!-- Card Content - Fixed Height -->
+        <div class="p-5  flex flex-col">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">CoffeeLime Cafe</h3>
+          
+          <p class="text-gray-600 text-sm mb-4 leading-relaxed ">
+            A modern coffee shop website with product showcase, cart functionality, and smooth animations. Frontend practice project built with HTML, Tailwind CSS, and vanilla JavaScript.
+          </p>
+          
+          <!-- Tech Stack -->
+          <div class="mb-4">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-amber-100 text-amber-600 px-2 py-1 rounded text-xs">
+                HTML
+              </span>
+              <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-xs">
+                Tailwind CSS
+              </span>
+              <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded text-xs">
+                JavaScript
+              </span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">
+                Responsive Design
+              </span>
+            </div>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="pt-3 border-t border-gray-100">
+            <div class="flex justify-between items-center">
+              <a
+                href="https://coffeelime.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-amber-600 font-semibold hover:text-amber-700 transition duration-300 flex items-center gap-1 text-sm"
+              >
+                View Project
+                <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+              
+              <div class="flex space-x-1">
+                <a
+                  href="https://coffeelime.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-8 h-8 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center hover:bg-amber-200 text-xs"
+                  title="Live Project"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Gadget Gang - Frontend Practice -->
+      <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 fade-in h-full flex flex-col" style="transition-delay: 0.3s">
+        <div class="h-48 relative overflow-hidden">
+          <!-- Electronics Image -->
+          <img 
+            src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            alt="Electronics gadgets"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          >
+          <div class="absolute inset-0  from-black/40 to-transparent"></div>
+          
+          <!-- Badge -->
+          <div class="absolute top-3 right-3">
+            <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-xs font-semibold shadow">
+              Practice Project
+            </span>
+          </div>
+          
+          <!-- Project Type -->
+          <div class="absolute bottom-3 left-3">
+            <span class="bg-white/90 text-gray-800 px-2 py-1 rounded text-xs font-medium">
+              Electronics Store
+            </span>
+          </div>
+        </div>
+        
+        <!-- Card Content - Fixed Height -->
+        <div class="p-5  flex flex-col">
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Gadget Gang</h3>
+          
+          <p class="text-gray-600 text-sm mb-4 leading-relaxed ">
+            An electronics e-commerce website with product filtering, detailed views, and modern UI design. Frontend practice project built with HTML, Tailwind CSS, and JavaScript.
+          </p>
+          
+          <!-- Tech Stack -->
+          <div class="mb-4">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs">
+                HTML
+              </span>
+              <span class="bg-cyan-100 text-cyan-600 px-2 py-1 rounded text-xs">
+                Tailwind CSS
+              </span>
+              <span class="bg-indigo-100 text-indigo-600 px-2 py-1 rounded text-xs">
+                JavaScript
+              </span>
+              <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">
+                Product Filtering
+              </span>
+            </div>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="pt-3 border-t border-gray-100">
+            <div class="flex justify-between items-center">
+              <a
+                href="https://gadget-gang.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-600 font-semibold hover:text-blue-700 transition duration-300 flex items-center gap-1 text-sm"
+              >
+                View Project
+                <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+              
+              <div class="flex space-x-1">
+                <a
+                  href="https://gadget-gang.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center hover:bg-blue-200 text-xs"
+                  title="Live Project"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology Stack Note -->
+    <!-- <div class="mt-10 fade-in" style="transition-delay: 0.4s">
+      <div class="bg-white rounded-lg shadow-sm p-6 max-w-2xl mx-auto">
+        <div class="text-center mb-4">
+          <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-3">
+            <i class="fas fa-code text-primary text-lg"></i>
+          </div>
+          <h3 class="font-semibold text-gray-800 text-lg">Built With Modern Frontend Technologies</h3>
+          <p class="text-gray-600 text-sm mt-1">All projects showcase skills in core web development</p>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-3 mb-4">
+          <div class="text-center p-3">
+            <div class="text-2xl text-orange-500 mb-1">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="font-medium text-gray-700 text-sm">HTML5</div>
+            <p class="text-gray-500 text-xs">Semantic Structure</p>
+          </div>
+          
+          <div class="text-center p-3">
+            <div class="text-2xl text-blue-500 mb-1">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="font-medium text-gray-700 text-sm">Tailwind CSS</div>
+            <p class="text-gray-500 text-xs">Utility-first Styling</p>
+          </div>
+          
+          <div class="text-center p-3">
+            <div class="text-2xl text-yellow-500 mb-1">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="font-medium text-gray-700 text-sm">JavaScript</div>
+            <p class="text-gray-500 text-xs">Interactive Features</p>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+          <div class="flex items-start gap-3">
+            <div class="text-primary mt-1">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div>
+              <p class="text-gray-600 text-sm">
+                <span class="font-medium">Note:</span> CoffeeLime and Gadget Gang are frontend practice projects demonstrating responsive design and modern UI/UX principles. Funny CGPA Calculator is a fully functional web application with interactive features.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+
+
 
     <!-- Achievements Section -->
     <section id="achievements" class="py-16 md:py-20 bg-white">
@@ -1517,7 +1609,7 @@
                 style="transition-delay: 0.4s"
               >
                 <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
-                <div class="flex space-x-4 justify-center lg:justify-start">
+                <div class="flex gap-4 justify-center lg:justify-start">
                   <a
                     href="https://github.com/am-sazid"
                     class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-primary-dark transition-all duration-300 transform hover:scale-110 pulse-glow"
@@ -1525,19 +1617,19 @@
                     <i class="fab fa-github"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/AMSazid1"
                     class="w-12 h-12 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-all duration-300 transform hover:scale-110"
                   >
                     <i class="fab fa-twitter"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/am-sazid18/"
                     class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-all duration-300 transform hover:scale-110"
                   >
                     <i class="fab fa-linkedin-in"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://wa.me/8801727099858"
                     class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-all duration-300 transform hover:scale-110"
                   >
                     <i class="fab fa-whatsapp"></i>
@@ -1626,7 +1718,7 @@
               Scientist
             </p>
           </div>
-          <div class="flex space-x-6">
+          <div class="flex gap-4">
             <a
               href="https://github.com/am-sazid"
               class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
@@ -1634,13 +1726,13 @@
               <i class="fab fa-github text-xl"></i>
             </a>
             <a
-              href="#"
+              href="mailto:amsazid.cse@gmail.com"
               class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
             >
               <i class="fas fa-envelope text-xl"></i>
             </a>
             <a
-              href="#"
+              href="https://wa.me/8801727099858"
               class="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
             >
               <i class="fab fa-whatsapp text-xl"></i>
